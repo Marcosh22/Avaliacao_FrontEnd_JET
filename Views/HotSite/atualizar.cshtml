@@ -1,0 +1,53 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<div class="ui centered stackable grid container" style="padding: 30px 0;">
+    <div class="sixteen wide tablet column padded">
+        <a href="https://suavecomunicacao.plataformaneo.com.br/hotsite/frontend">
+            <i class="arrow left icon"></i>
+            Voltar
+        </a>
+    </div>
+    <div class="sixteen wide tablet column padded">
+        <h1>Dados Recebidos</h1><br />
+    </div>
+    <div class="sixteen wide tablet column padded">
+        <div class="ui middle aligned divided list" id="lista-cadastros">
+        </div>
+    </div>
+</div>
+
+<div class="ui modal small" id="frontend-modal">
+    <div class="header">Atualizar</div>
+  <div class="content">
+    <form action="" id="frontend_certification_form-update" class="ui form frontend-cert">
+        <input type="hidden" name="id">
+        <div>
+            <div class="required field">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="input-field" id="nome">
+            </div>
+            <div class="required field">
+                <label for="email__form">E-mail</label>
+                <input type="text" name="email" class="input-field" id="email__form" placeholder="joe@email.com">
+            </div>
+            <div class="required field">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" class="input-field" id="telefone" placeholder="(99) 9999-9999 ou (99) 99999-9999">
+            </div>
+            <div class="required field">
+                <label for="assunto">Assunto</label>
+                <input type="text" name="assunto" class="input-field" id="assunto">
+            </div>
+            <div class="required field">
+                <label for="mensagem">Mensagem</label>
+                <textarea rows="3" name="mensagem" class="input-field" id="mensagem"></textarea>
+            </div>
+            <div class="ui error message"></div>
+            <button class="ui button" type="submit">Atualizar</button>
+        </div>
+    </form>
+  </div>
+</div>

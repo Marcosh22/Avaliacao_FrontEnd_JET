@@ -36,6 +36,9 @@ require('./modules/jquery-ui.min');
 //--------------------[ LazyLoad ]--------------------//
 require('../functions/lazy_load');
 
+//--------------------[ Certificação Front End - Formulário ]--------------------//
+require('../functions/frontend_certification_form');
+
 //--------------------[ Start Document ]--------------------//
 $(document).ready(function(){
     "use strict";

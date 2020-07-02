@@ -1,0 +1,66 @@
+@{
+    ViewBag.Title = "Front End";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<div class="ui centered stackable grid container" style="padding: 30px 0;">
+    <div class="sixteen wide tablet column padded">
+        <a href="https://suavecomunicacao.plataformaneo.com.br/hotsite/atualizar">Ver dados recebidos
+            <i class="arrow right icon"></i>
+        </a>
+    </div>
+    <div class="sixteen wide tablet column padded">
+        <h1>Informe seus dados</h1><br />
+    </div>
+    <div class="ten wide tablet column padded">
+        <form action="" id="frontend_certification_form" class="ui form frontend-cert">
+            <div>
+                <div class="required field">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" class="input-field" id="nome">
+                </div>
+                <div class="required field">
+                    <label for="email__form">E-mail</label>
+                    <input type="text" name="email" class="input-field" id="email__form" placeholder="joe@email.com">
+                </div>
+                <div class="required field">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" name="telefone" class="input-field" id="telefone" placeholder="(99) 9999-9999 ou (99) 99999-9999">
+                </div>
+                <div class="required field">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" name="assunto" class="input-field" id="assunto">
+                </div>
+                <div class="required field">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="3" name="mensagem" class="input-field" id="mensagem"></textarea>
+                </div>
+                <div class="ui error message"></div>
+                <button class="ui button" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div class="five wide tablet column padded">
+        <p id="valor-nome">
+            <strong>Nome:&nbsp;</strong>
+            <span></span>
+        </p>
+        <p id="valor-email__form">
+            <strong>E-mail:&nbsp;</strong>
+            <span></span>
+        </p>
+        <p id="valor-telefone">
+            <strong>Telefone:&nbsp;</strong>
+            <span></span>
+        </p>
+        <p id="valor-assunto">
+            <strong>Assunto:&nbsp;</strong>
+            <span></span>
+        </p>
+        <p id="valor-mensagem">
+            <strong>Mensagem:&nbsp;</strong>
+            <span></span>
+        </p>
+    </div>
+
+</div>
